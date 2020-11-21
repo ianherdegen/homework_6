@@ -47,16 +47,6 @@ document.querySelector("#mute").addEventListener("click", function() {
 	}
 });
 
-document.querySelector("#skip").addEventListener("click", function() {
-	if (video.currentTime + 5 < video.duration) {
-		video.currentTime = video.currentTime + 5;
-	}
-	else {
-		video.currentTime = 0;
-	}
-	console.log("Current location " + video.currentTime)
-});
-
 var slider = document.getElementById("volumeSlider");
 var output = document.getElementById("volume");
 
